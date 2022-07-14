@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	function formCheck(){
+		var id=document.join.id.value;
+		var pw=document.join.pw.value;
+		var pwCheck=document.join.pwCheck.value;
+		var name=document.join.name.value;
+		
+		if(id=="" || id==null){
+			alert('아이디는 필수사항입니다.');
+			document.join.id.focus();
+			//focus():해당요소에 커서를 이동시켜 준다.
+			return;
+			
+		}
+		if(pw==""|| pw==null){
+			alert('비밀번호는 필수사항입니다');
+			document.join.pw.focus();
+			return;
+			
+		}
+		if(pw !=pwCheck){
+			alert('입력하 비밀번화 일치하지 않습니다.');
+			docuemnt.join.pwCheck.focus();
+			return;
+		}
+		if(name==""|| name==null){
+			alert("이름은 필수사항입니다.");
+			document.join.name.focus();
+			return;
+			
+		}
+		document.join.submit();
+		//자바스크립트로 유효성검사를 한 후 최종적으로 자바스크립트에서 서버쪽으로 데이터를 전송한다.
+	}
+</script>
+
+</head>
+<body>
+
+	<h2>회원가입</h2>
+	<form action="#" name="join">
+		아이디:<input type="text" name="id"><br>	
+		비밀번호:<input type="password" password="pw" name="pw"><br>
+		비밀번호 확인:<input type="password" password="pw" name="pwcheck"><br>
+		
+		이름:<input type="text" name="id"><br>	
+		전화번호:<input type="text" name="tel"><br>	
+		
+		<input type="button" value="회원가입" onclick="">
+	
+	</form>
+
+</body>
+</html>

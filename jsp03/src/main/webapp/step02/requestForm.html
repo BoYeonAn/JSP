@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="request02.jsp" method="post">
+	<fieldset>
+		<legend>학생정보</legend>
+		이름:<input type="text" name="name" size="10"><br>
+		학번:<input type="text" name="studnetID" size="10"><br>
+		연락처:<input type="text" name="number" size="15"><br>
+		동아리:<input type="checkbox" name="circle" value="band">밴드동아리
+		<input type="checkbox" name="circle" value="dance">댄스
+		<input type="checkbox" name="circle" value="read">읽기
+		<input type="checkbox" name="circle" value="eng">영어
+		<br>
+		전공:<input type="radio" name="major" value="com">컴퓨터학과
+		<input type="radio" name="major" value="math">수학과
+		<input type="radio" name="major" value="law">법학과
+		<input type="radio" name="major" value="economy">경제학과
+		<br>
+		사는지역:<select name="area">
+		<option value="seoul">서울</option>
+		<option value="daejeon">대전</option>
+		<option value="daegu">대구</option>
+		<option value="busan">부산</option>
+		
+		
+		</select><br>
+		<input type="submit" value="서버로전송">
+		<input type="reset" value="취소">
+		
+		
+		
+		
+	</fieldset>	
+	
+	</form>
+</body>
+</html>
